@@ -1,0 +1,51 @@
+
+<div id="admin-dashboard-container">
+  <h2>Admin Dashboard</h2>
+  <button id="logout-button">Logout</button>
+
+  <div id="management-container">
+    <div id="manage-rooms-container">
+      <h3>Manage Rooms</h3>
+      <form id="add-room-form">
+        <input type="text" id="new-room-number" placeholder="Room Number" required>
+        <button type="submit">Add Room</button>
+      </form>
+      <ul id="room-list"></ul>
+    </div>
+
+    <div id="manage-task-types-container">
+      <h3>Manage Task Types</h3>
+      <form id="add-task-type-form">
+        <input type="text" id="new-task-type" placeholder="Task Type" required>
+        <button type="submit">Add Task Type</button>
+      </form>
+      <ul id="task-type-list"></ul>
+    </div>
+  </div>
+
+  <div id="assign-task-container">
+    <h3>Assign New Task</h3>
+    <form id="assign-task-form">
+      <select id="task-room-number" required></select>
+      <select id="task-name" required></select>
+      <select id="task-assign-to" required></select>
+      <textarea id="task-description" placeholder="Description"></textarea>
+      <button type="submit">Assign Task</button>
+    </form>
+  </div>
+
+  <div id="task-lists-container">
+    <div id="pending-tasks-container">
+      <h3>Pending Tasks</h3>
+      <ul id="pending-task-list"></ul>
+    </div>
+    <div id="ongoing-tasks-container">
+      <h3>Ongoing Tasks</h3>
+      <ul id="ongoing-task-list"></ul>
+    </div>
+    <div id="completed-tasks-container">
+      <h3>Completed Tasks</h3>
+      <ul id="completed-task-list"></ul>
+    </div>
+  </div>
+</div>
